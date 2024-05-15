@@ -40,4 +40,18 @@
 		</developer>
 	</developers>
 
+	<properties>
+		<birt.version>4.15.0.v202403260939</birt.version>
+	</properties>
+
+	<modules>
+		<module>org.eclipse.birt.runtime</module>
+	</modules>
+
+	<repositories>
+		<repository>
+			<id>birt-4.15.0</id>
+			<url>https://p2repository.com/mvn3/birt-4.15.0/</url>
+		</repository>
+	</repositories>
 </project>
