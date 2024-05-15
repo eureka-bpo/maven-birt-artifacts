@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>eu.eureka-bpo.birt</groupId>
+	<artifactId>parent</artifactId>
+	<version>SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<name>Eclipse BIRT Maven artifacts parent</name>
+	<description>Eclipse BIRT Maven artifacts parent</description>
+	<url>https://github.com/eureka-bpo/maven-birt-artifacts.git</url>
+
+	<scm>
+		<url>https://github.com/eureka-bpo/maven-birt-artifacts.git</url>
+		<connection>scm:git:https://github.com/eureka-bpo/maven-birt-artifacts.git</connection>
+		<developerConnection>scm:git:git@github.com:eureka-bpo/maven-birt-artifacts.git</developerConnection>
+	</scm>
+
+	<issueManagement>
+		<system>GitHub</system>
+		<url>https://github.com/eureka-bpo/maven-birt-artifacts/issues</url>
+	</issueManagement>
+
+	<licenses>
+		<license>
+			<name>Eclipse Public License 2.0</name>
+			<url>http://www.eclipse.org/legal/epl-2.0</url>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<email>support@eureka-bpo.eu</email>
+			<roles>
+				<role>Developer</role>
+			</roles>
+		</developer>
+	</developers>
+
+</project>
