@@ -6,7 +6,7 @@
 
 	<groupId>eu.eureka-bpo.birt</groupId>
 	<artifactId>parent</artifactId>
-	<version>SNAPSHOT</version>
+	<version>4.15.0.0</version>
 	<packaging>pom</packaging>
 
 	<name>Eclipse BIRT Maven artifacts parent</name>
