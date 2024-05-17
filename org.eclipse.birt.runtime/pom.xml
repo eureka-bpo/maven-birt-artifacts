@@ -736,7 +736,7 @@
 				<version>3.6.1</version>
 				<executions>
 					<execution>
-						<id>unpack-dependencies-source</id>
+						<id>unpack-dependencies-sources</id>
 						<phase>verify</phase>
 						<goals>
 							<goal>unpack-dependencies</goal>
@@ -744,7 +744,7 @@
 						<configuration>
 							<classifier>source</classifier>
 							<includeScope>provided</includeScope>
-							<outputDirectory>${project.build.directory}/dependencies-source</outputDirectory>
+							<outputDirectory>${project.build.directory}/dependencies-sources</outputDirectory>
 						</configuration>
 					</execution>
 				</executions>
@@ -785,14 +785,14 @@
 						<phase>none</phase>
 					</execution>
 					<execution>
-						<id>make-jar-source</id>
+						<id>make-jar-sources</id>
 						<phase>verify</phase>
 						<goals>
 							<goal>jar</goal>
 						</goals>
 						<configuration>
-							<classesDirectory>${project.build.directory}/dependencies-source</classesDirectory>
-							<classifier>source</classifier>
+							<classesDirectory>${project.build.directory}/dependencies-sources</classesDirectory>
+							<classifier>sources</classifier>
 							<archive>
 								<manifestEntries>
 									<Bundle-Version>${project.version}</Bundle-Version>
@@ -816,7 +816,7 @@
 							<goal>jar</goal>
 						</goals>
 						<configuration>
-							<sourcepath>${project.build.directory}/dependencies-source</sourcepath>
+							<sourcepath>${project.build.directory}/dependencies-sources</sourcepath>
 							<failOnError>false</failOnError>
 						</configuration>
 					</execution>
