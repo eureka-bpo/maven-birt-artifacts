@@ -781,6 +781,10 @@
 				<version>3.3.0</version>
 				<executions>
 					<execution>
+						<id>default-jar</id>
+						<phase>none</phase>
+					</execution>
+					<execution>
 						<id>make-jar-source</id>
 						<phase>verify</phase>
 						<goals>
@@ -800,6 +804,9 @@
 						</configuration>
 					</execution>
 				</executions>
+			</plugin>
+			<plugin>
+				<artifactId>maven-gpg-plugin</artifactId>
 			</plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
