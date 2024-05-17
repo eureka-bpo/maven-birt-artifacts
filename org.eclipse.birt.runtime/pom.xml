@@ -8,7 +8,7 @@
 		<groupId>eu.eureka-bpo.birt</groupId>
 		<artifactId>parent</artifactId>
 		<version>SNAPSHOT</version>
-        </parent>
+	</parent>
 	<artifactId>org.eclipse.birt.runtime</artifactId>
 	<packaging>jar</packaging>
 
@@ -735,6 +735,14 @@
 				<artifactId>maven-assembly-plugin</artifactId>
 				<version>3.7.1</version>
 				<configuration>
+					<archive>
+						<manifestEntries>
+							<Bundle-Version>${project.version}</Bundle-Version>
+							<Bundle-Name>BIRT Runtime SDK</Bundle-Name>
+							<Bundle-SymbolicName>org.eclipse.birt.runtime</Bundle-SymbolicName>
+							<Bundle-Vendor>Eureka-BPO.eu</Bundle-Vendor>
+						</manifestEntries>
+					</archive>
 					<descriptors>
 						<descriptor>jar-with-provided-dependencies.xml</descriptor>
 					</descriptors>
@@ -786,6 +794,17 @@
 						<configuration>
 							<from>${project.build.directory}/${project.artifactId}-${project.version}.jar/oda-jdbc.jar/org</from>
 							<to>${project.build.directory}/${project.artifactId}-${project.version}.jar/org</to>
+						</configuration>
+					</execution>
+					<execution>
+						<id>replace-plugin.xml</id>
+						<goals>
+							<goal>cp</goal>
+						</goals>
+						<phase>package</phase>
+						<configuration>
+							<from>${project.basedir}/plugin.xml</from>
+							<to>${project.build.directory}/${project.artifactId}-${project.version}.jar/plugin.xml</to>
 						</configuration>
 					</execution>
 					<execution>

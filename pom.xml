@@ -46,6 +46,7 @@
 
 	<modules>
 		<module>org.eclipse.birt.runtime</module>
+		<module>birt-runtime</module>
 	</modules>
 
 	<repositories>
