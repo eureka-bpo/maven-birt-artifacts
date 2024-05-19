@@ -12,6 +12,8 @@
 	<artifactId>birt-runtime</artifactId>
 	<packaging>pom</packaging>
 
+	<url>https://github.com/eureka-bpo/maven-birt-artifacts/tree/master/birt-runtime</url>
+
 	<properties>
 		<maven.main.skip>true</maven.main.skip>
 		<maven.test.skip>true</maven.test.skip>

@@ -11,7 +11,7 @@
 
 	<name>Eclipse BIRT Maven artifacts parent</name>
 	<description>Eclipse BIRT Maven artifacts parent</description>
-	<url>https://github.com/eureka-bpo/maven-birt-artifacts.git</url>
+	<url>https://github.com/eureka-bpo/maven-birt-artifacts/tree/master</url>
 
 	<scm>
 		<url>https://github.com/eureka-bpo/maven-birt-artifacts.git</url>
