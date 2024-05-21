@@ -11,7 +11,7 @@ Use it by declaring in your project's pom.xml:
 		<dependency>
 			<groupId>eu.eureka-bpo.birt</groupId>
 			<artifactId>birt-runtime</artifactId>
-			<version>SNAPSHOT</version>
+			<version>4.13.0.0</version>
 			<type>pom</type>
 		</dependency>
 	</dependencies>
