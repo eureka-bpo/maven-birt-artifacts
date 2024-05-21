@@ -46,14 +46,14 @@
 		<gpg.executable>gpg</gpg.executable>
 		<nexus.host>s01.oss.sonatype.org</nexus.host>
 
-		<maven.compiler.source>17</maven.compiler.source>
-		<maven.compiler.target>17</maven.compiler.target>
+		<maven.compiler.source>11</maven.compiler.source>
+		<maven.compiler.target>11</maven.compiler.target>
 		<maven-javadoc-plugin.version>3.6.3</maven-javadoc-plugin.version>
 		<maven-install-plugin.version>3.1.2</maven-install-plugin.version>
 		<maven-gpg-plugin.version>3.2.4</maven-gpg-plugin.version>
 		<nexus-staging-maven-plugin.version>1.6.13</nexus-staging-maven-plugin.version> 
 
-		<birt.version>4.15.0.v202403260939</birt.version>
+		<birt.version>4.13.0.v202303021806</birt.version>
 	</properties>
 
 	<build>
@@ -107,8 +107,8 @@
 
 	<repositories>
 		<repository>
-			<id>birt-4.15.0</id>
-			<url>https://p2repository.com/mvn3/birt-4.15.0/</url>
+			<id>birt-4.13.0</id>
+			<url>https://p2repository.com/mvn3/birt-4.13.0/</url>
 		</repository>
 	</repositories>
 </project>

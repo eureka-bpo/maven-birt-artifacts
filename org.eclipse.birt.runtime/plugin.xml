@@ -1,117 +1,44 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <plugin>
-<!--import from org.eclipse.birt.report.data.oda.jdbc-->
-     <extension-point id="org.eclipse.birt.report.data.oda.jdbc.driverinfo" name="JDBC Driver Information Extension" schema="schema/driverinfo.exsd"/>
-   			
-   <extension point="org.eclipse.datatools.connectivity.oda.dataSource">
-      <dataSource defaultDisplayName="JDBC Data Source" driverClass="org.eclipse.birt.report.data.oda.jdbc.OdaJdbcDriver" id="org.eclipse.birt.report.data.oda.jdbc" odaVersion="3.1" setThreadContextClassLoader="false">
-         <properties>
-            <propertyGroup defaultDisplayName="Connection Properties" name="connectionProperties">
-               <property canInherit="true" defaultDisplayName="JDBC Driver &amp;Class" name="odaDriverClass" type="string"/>
-               <property canInherit="true" defaultDisplayName="JDBC Driver U&amp;RL" name="odaURL" type="string"/>
-               <property canInherit="true" defaultDisplayName="Data Source" name="odaDataSource" type="string"/>
-               <property canInherit="true" defaultDisplayName="User &amp;Name" name="odaUser" type="string"/>
-               <property canInherit="true" defaultDisplayName="&amp;Auto Commit" name="odaAutoCommit" type="choice">
-         			<choice defaultDisplayName="false" name="false" value="false"/>
-               		<choice defaultDisplayName="true" name="true" value="true"/>
-               	</property>
-               <property canInherit="true" defaultDisplayName="&amp;Isolation Mode" name="odaIsolationMode" type="choice">
-					<choice defaultDisplayName="read-uncommitted" name="read-uncommitted" value="1"/>
-               		<choice defaultDisplayName="read-committed" name="read-committed" value="2"/>
-               		<choice defaultDisplayName="repeatable-read" name="repeatable-read" value="4"/>
-               		<choice defaultDisplayName="serializable" name="serializable" value="8"/>
-                 </property>
-               <property canInherit="true" defaultDisplayName="Pass&amp;word" isEncryptable="true" name="odaPassword" type="string"/>
-               <property canInherit="true" defaultDisplayName="&amp;JNDI URL" name="odaJndiName" type="string"/>
-               <property canInherit="true" defaultDisplayName="TrustStorePasswor&amp;d:" isEncryptable="true" name="TrustStorePassword" type="string"/>
-                <property canInherit="true" defaultDisplayName="Ke&amp;yStorePassword:" isEncryptable="true" name="KeyStorePassword" type="string"/>
-            </propertyGroup>
-            <propertyVisibility name="odaDataSource" visibility="hide"/>
-            <propertyVisibility name="TrustStorePassword" visibility="hide"/>
-            <propertyVisibility name="KeyStorePassword" visibility="hide"/>
-         </properties>
-      </dataSource>
-      <dataSet defaultDisplayName="SQL Select Query" id="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet">
-         <dataTypeMapping nativeDataType="BIT" nativeDataTypeCode="-7" odaScalarDataType="Integer"/>
-         <dataTypeMapping nativeDataType="TINYINT" nativeDataTypeCode="-6" odaScalarDataType="Integer"/>
-         <dataTypeMapping nativeDataType="SMALLINT" nativeDataTypeCode="5" odaScalarDataType="Integer"/>
-         <dataTypeMapping nativeDataType="INTEGER" nativeDataTypeCode="4" odaScalarDataType="Integer"/>
-         <dataTypeMapping nativeDataType="BIGINT" nativeDataTypeCode="-5" odaScalarDataType="Decimal"/>
-         <dataTypeMapping nativeDataType="FLOAT" nativeDataTypeCode="6" odaScalarDataType="Double"/>
-         <dataTypeMapping nativeDataType="REAL" nativeDataTypeCode="7" odaScalarDataType="Double"/>
-         <dataTypeMapping nativeDataType="DOUBLE" nativeDataTypeCode="8" odaScalarDataType="Double"/>
-         <dataTypeMapping nativeDataType="NUMERIC" nativeDataTypeCode="2" odaScalarDataType="Decimal"/>
-         <dataTypeMapping nativeDataType="DECIMAL" nativeDataTypeCode="3" odaScalarDataType="Decimal"/>
-         <dataTypeMapping nativeDataType="CHAR" nativeDataTypeCode="1" odaScalarDataType="String"/>
-         <dataTypeMapping nativeDataType="VARCHAR" nativeDataTypeCode="12" odaScalarDataType="String"/>
-         <dataTypeMapping nativeDataType="LONGVARCHAR" nativeDataTypeCode="-1" odaScalarDataType="String"/>
-         <dataTypeMapping nativeDataType="DATE" nativeDataTypeCode="91" odaScalarDataType="Date"/>
-         <dataTypeMapping nativeDataType="TIME" nativeDataTypeCode="92" odaScalarDataType="Time"/>
-         <dataTypeMapping nativeDataType="TIMESTAMP" nativeDataTypeCode="93" odaScalarDataType="Timestamp"/>
-               
-         <!--For Oracle TIMESTAMPTZ type -->
-         <dataTypeMapping nativeDataType="TIMESTAMPTZ" nativeDataTypeCode="-101" odaScalarDataType="Timestamp"/>
-         <!--For Oracle TIMESTAMPLTZ type -->
-         <dataTypeMapping nativeDataType="TIMESTAMPLTZ" nativeDataTypeCode="-102" odaScalarDataType="Timestamp"/>
-         <dataTypeMapping nativeDataType="BOOLEAN" nativeDataTypeCode="16" odaScalarDataType="Boolean"/>
-         <dataTypeMapping nativeDataType="BINARY" nativeDataTypeCode="-2" odaScalarDataType="Blob"/>
-         <dataTypeMapping nativeDataType="VARBINARY" nativeDataTypeCode="-3" odaScalarDataType="Blob"/>
-         <dataTypeMapping nativeDataType="LONGVARBINARY" nativeDataTypeCode="-4" odaScalarDataType="Blob"/>
-         <dataTypeMapping nativeDataType="BLOB" nativeDataTypeCode="2004" odaScalarDataType="Blob"/>
-         <dataTypeMapping nativeDataType="CLOB" nativeDataTypeCode="2005" odaScalarDataType="Clob"/>
-         <properties>
-            <propertyGroup defaultDisplayName="Query Properties" name="queryProperties">
-               <property canInherit="true" defaultDisplayName="&amp;Query Time Out (in seconds)" name="queryTimeOut" type="string"/>
-               <property canInherit="false" defaultDisplayName="&amp;Row Fetch Size" name="rowFetchSize" type="string"/>
-            </propertyGroup>
-         </properties>
-      </dataSet>
-      <dataSet defaultDisplayName="SQL Stored Procedure Query" id="org.eclipse.birt.report.data.oda.jdbc.SPSelectDataSet">
-         <dataTypeMapping nativeDataType="BIT" nativeDataTypeCode="-7" odaScalarDataType="Integer"/>
-         <dataTypeMapping nativeDataType="TINYINT" nativeDataTypeCode="-6" odaScalarDataType="Integer"/>
-         <dataTypeMapping nativeDataType="SMALLINT" nativeDataTypeCode="5" odaScalarDataType="Integer"/>
-         <dataTypeMapping nativeDataType="INTEGER" nativeDataTypeCode="4" odaScalarDataType="Integer"/>
-         <dataTypeMapping nativeDataType="BIGINT" nativeDataTypeCode="-5" odaScalarDataType="Decimal"/>
-         <dataTypeMapping nativeDataType="FLOAT" nativeDataTypeCode="6" odaScalarDataType="Double"/>
-         <dataTypeMapping nativeDataType="REAL" nativeDataTypeCode="7" odaScalarDataType="Double"/>
-         <dataTypeMapping nativeDataType="DOUBLE" nativeDataTypeCode="8" odaScalarDataType="Double"/>
-         <dataTypeMapping nativeDataType="NUMERIC" nativeDataTypeCode="2" odaScalarDataType="Decimal"/>
-         <dataTypeMapping nativeDataType="DECIMAL" nativeDataTypeCode="3" odaScalarDataType="Decimal"/>
-         <dataTypeMapping nativeDataType="CHAR" nativeDataTypeCode="1" odaScalarDataType="String"/>
-         <dataTypeMapping nativeDataType="VARCHAR" nativeDataTypeCode="12" odaScalarDataType="String"/>
-         <dataTypeMapping nativeDataType="LONGVARCHAR" nativeDataTypeCode="-1" odaScalarDataType="String"/>
-         <dataTypeMapping nativeDataType="DATE" nativeDataTypeCode="91" odaScalarDataType="Date"/>
-         <dataTypeMapping nativeDataType="TIME" nativeDataTypeCode="92" odaScalarDataType="Time"/>
-         <dataTypeMapping nativeDataType="TIMESTAMP" nativeDataTypeCode="93" odaScalarDataType="Timestamp"/>
-         <!--For Oracle TIMESTAMPTZ type -->
-         <dataTypeMapping nativeDataType="TIMESTAMPTZ" nativeDataTypeCode="-101" odaScalarDataType="Timestamp"/>
-         <dataTypeMapping nativeDataType="BOOLEAN" nativeDataTypeCode="16" odaScalarDataType="Boolean"/>
-         <dataTypeMapping nativeDataType="BINARY" nativeDataTypeCode="-2" odaScalarDataType="Blob"/>
-         <dataTypeMapping nativeDataType="VARBINARY" nativeDataTypeCode="-3" odaScalarDataType="Blob"/>
-         <dataTypeMapping nativeDataType="LONGVARBINARY" nativeDataTypeCode="-4" odaScalarDataType="Blob"/>
-         <dataTypeMapping nativeDataType="BLOB" nativeDataTypeCode="2004" odaScalarDataType="Blob"/>
-         <dataTypeMapping nativeDataType="CLOB" nativeDataTypeCode="2005" odaScalarDataType="Clob"/>
-         <dataTypeMapping nativeDataType="REF CURSOR" nativeDataTypeCode="-10" odaScalarDataType="String"/>
-         <properties>
-            <propertyGroup defaultDisplayName="Query Properties" name="queryProperties">
-               <property canInherit="true" defaultDisplayName="&amp;Query Time Out (in seconds)" name="queryTimeOut" type="string"/>
-                <property canInherit="true" defaultDisplayName="&amp;Row Fetch Size" name="rowFetchSize" type="string"/>
-            </propertyGroup>
-         </properties>
-      </dataSet>
 
+<!--import from org.eclipse.birt.me.prettyprint.hector-->
+   <extension id="org.eclipse.birt.me.prettyprint.hector" name="%extension.name" point="org.eclipse.birt.core.ScriptFunctionService">
+      <JSLib location="lib/">
+      </JSLib>
    </extension>
-        <extension point="org.eclipse.datatools.connectivity.connectionProfile">
-      <category id="org.eclipse.birt.report.data.oda.jdbc" name="JDBC Data Source" parentCategory="org.eclipse.datatools.connectivity.oda.profileCategory"/>
-      <connectionProfile category="org.eclipse.birt.report.data.oda.jdbc" id="org.eclipse.birt.report.data.oda.jdbc" name="BIRT JDBC Data Source Connection Profile" pingFactory="org.eclipse.datatools.connectivity.oda.profile.OdaConnectionFactory"/>
-      <connectionFactory class="org.eclipse.datatools.connectivity.oda.profile.OdaConnectionFactory" id="org.eclipse.datatools.connectivity.oda.IConnection" name="ODA Connection Factory" profile="org.eclipse.birt.report.data.oda.jdbc"/>
-   </extension>
+
+<!--import from org.eclipse.birt.report.data.oda.jdbc.dbprofile.sampledb-->
    
-   <extension point="org.eclipse.birt.report.data.oda.jdbc.driverinfo">
-      <jdbcDriver driverClass="org.apache.derby.jdbc.EmbeddedDriver" name="Apache Derby Embedded Driver" urlTemplate="jdbc:derby:[subsubprotocol:]DATABASE[;ATTRIBUTE=VALUE]*"/>
+   <extension point="org.eclipse.datatools.connectivity.driverExtension">
+      <driverTemplate createDefault="false" defaultDefinitionName="BIRT SampleDb Derby Embedded Driver" emptyJarListIsOK="false" id="org.eclipse.birt.report.data.oda.jdbc.dbprofile.sampledb.driverTemplate" jarList="derby.jar" name="BIRT SampleDb Derby Embedded JDBC Driver" parentCategory="org.eclipse.datatools.connectivity.db.derby.10_2.driverCategory" valuesProvider="org.eclipse.birt.report.data.oda.jdbc.dbprofile.sampledb.internal.impl.SampleDbValuesProvider">
+         <properties>
+            <property generated="false" id="org.eclipse.datatools.connectivity.db.driverClass" name="Driver class" required="true" value="org.apache.derby.jdbc.EmbeddedDriver" visible="false"/>
+            <property generated="false" id="org.eclipse.datatools.connectivity.db.vendor" name="Vendor" required="true" value="Derby" visible="true"/>
+            <property generated="false" id="org.eclipse.datatools.connectivity.db.version" name="Version" required="true" value="10.2" visible="false"/>   
+            <property generated="false" id="org.eclipse.datatools.connectivity.db.databaseName" name="Database" required="true" value="BirtSample" visible="true"/>                             
+            <property generated="false" id="org.eclipse.datatools.connectivity.db.URL" name="Connection URL" required="true" value="jdbc:derby:Plugin_State_Location/db/BirtSample" visible="true"/>
+            <property generated="false" id="org.eclipse.datatools.connectivity.db.username" name="User name" required="false" value="ClassicModels" visible="false"/>
+            <property generated="false" id="org.eclipse.datatools.connectivity.db.password" name="Password" required="false" visible="false"/>
+            <property generated="false" id="org.eclipse.datatools.connectivity.db.savePWD" name="Save password" required="true" value="true" visible="false">
+            </property>
+         </properties>
+      </driverTemplate>
+   </extension>
+
+   <extension point="org.eclipse.datatools.connectivity.ProfileManagerInitializationProvider">
+      <connection connectionInitializer="org.eclipse.birt.report.data.oda.jdbc.dbprofile.sampledb.internal.impl.SampleDbFactory" connectionProfileID="org.eclipse.datatools.connectivity.db.derby.embedded.connectionProfile" connectionProfileName="BIRT Classic Models Sample Database" driverDefinitionName="BIRT SampleDb Derby Embedded Driver" driverTemplateID="org.eclipse.birt.report.data.oda.jdbc.dbprofile.sampledb.driverTemplate">
+         <property id="org.eclipse.datatools.connectivity.db.URL" value="jdbc:derby:Plugin_State_Location/db/BirtSample">
+         </property>
+      </connection>
+   </extension>
+
+   <extension point="org.eclipse.datatools.connectivity.oda.consumer.propertyProvider">
+      <dataSourcePropertyService consumerApplicationId="org.eclipse.birt.report.data.oda.jdbc.dbprofile.sampledb.driverTemplate" providerClass="org.eclipse.birt.report.data.oda.jdbc.dbprofile.sampledb.internal.impl.SampleDbPropertyProvider">
+      </dataSourcePropertyService>
    </extension>
 
 <!--import from org.eclipse.birt.report.data.oda.sampledb-->
+
      <extension point="org.eclipse.datatools.connectivity.oda.dataSource">
       <dataSource defaultDisplayName="Classic Models Inc. Sample Database" driverClass="org.eclipse.birt.report.data.oda.sampledb.SampleDBDriver" id="org.eclipse.birt.report.data.oda.sampledb" odaVersion="3.1" setThreadContextClassLoader="false">
             <properties>
@@ -173,35 +100,8 @@
       </emitter>
    </extension>
 
-<!--import from org.eclipse.birt.chart.device.pdf-->
-     <extension point="org.eclipse.birt.chart.engine.devicerenderers">
-      <deviceRenderer description="PDF Chart Renderer" device="org.eclipse.birt.chart.device.pdf.PDFRendererImpl" name="dv.PDF"/>            
-   </extension>
-   <extension point="org.eclipse.birt.chart.engine.displayservers">
-      <displayserver name="ds.PDF" server="org.eclipse.birt.chart.device.pdf.PDFDisplayServer"/>
-   </extension>
-
-<!--import from org.eclipse.birt.report.engine-->
-   <extension-point id="org.eclipse.birt.report.engine.reportitemGeneration" name="%extension-point.name" schema="schema/reportitemGeneration.exsd"/>
-   <extension-point id="org.eclipse.birt.report.engine.reportitemPresentation" name="%extension-point.name.0" schema="schema/reportitemPresentation.exsd"/>
-   <extension-point id="org.eclipse.birt.report.engine.emitters" name="%extension-point.name.1" schema="schema/emitters.exsd"/>
-   <extension-point id="org.eclipse.birt.report.engine.reportitemQuery" name="%extension-point.name.2" schema="schema/reportitemQuery.exsd"/>
-   <extension-point id="org.eclipse.birt.report.engine.reportEventHandler" name="%extension-point.name.3" schema="schema/reportEventHandler.exsd"/>
-   <extension-point id="org.eclipse.birt.report.engine.reportItemPreparation" name="%extension-point.name.4" schema="schema/reportItemPreparation.exsd"/>
-   <extension-point id="org.eclipse.birt.report.engine.dataExtraction" name="%extension-point.name.5" schema="schema/dataExtraction.exsd"/>
-   <extension-point id="org.eclipse.birt.report.engine.extendedItemFactory" name="%extension-point.name.6" schema="schema/extendedItemFactory.exsd"/>
-   <extension id="org.eclipse.birt.report.engine.ReportExecutor" name="%extension.name" point="org.eclipse.core.runtime.applications">
-      <application>
-         <run class="org.eclipse.birt.report.engine.plugin.ReportExecutor"/>
-      </application>
-   </extension>
-   <extension id="org.eclipse.birt.report.engine.ReportEngineSDK" point="org.eclipse.core.runtime.products">
-      <product application="org.eclipse.birt.report.engine.ReportExecutor" name="%product.name"/>
-   </extension>
-   <extension id="org.eclipse.birt.report.engine.ReportEngineFactory" name="%extension.name.0" point="org.eclipse.birt.core.FactoryService">
-      <factory class="org.eclipse.birt.report.engine.api.impl.ReportEngineFactory"/>
-   </extension>
-   <extension point="org.eclipse.birt.report.model.IScriptableObjectClassInfo">
-      <scriptableClassInfo class="org.eclipse.birt.report.engine.api.script.EngineScriptableClassInfo" extensionName="BIRT_ROM"/>
+<!--import from org.eclipse.birt.report.engine.dataextraction.csv-->
+   <extension point="org.eclipse.birt.report.engine.dataExtraction">
+         <dataExtraction class="org.eclipse.birt.report.engine.dataextraction.csv.CSVDataExtractionImpl" format="csv" id="org.eclipse.birt.report.engine.dataextraction.csv" mimeType="text/csv" name="CSV"/>
    </extension>
 </plugin>
