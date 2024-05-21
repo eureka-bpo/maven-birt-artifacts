@@ -913,7 +913,7 @@
 								<fileset>
 									<directory>${project.build.directory}/${project.artifactId}-${project.version}.jar/lib</directory>
 									<includes>
-										<include>*.jar</include>
+										<include>*</include>
 									</includes>
 								</fileset>
 								<fileset>
