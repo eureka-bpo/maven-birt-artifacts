@@ -823,6 +823,7 @@
 					<properties>
 						<maven.compiler.source>${maven.compiler.source}</maven.compiler.source>
 						<maven.compiler.target>${maven.compiler.target}</maven.compiler.target>
+						<birt.version>${birt.version}</birt.version>
 						<birt-runtime.version>${project.version}</birt-runtime.version>
 					</properties>
 				</configuration>
@@ -836,6 +837,14 @@
 						</goals>
 					</execution>
 				</executions>
+				<dependencies>
+					<dependency>
+						<groupId>org.eclipse.birt</groupId>
+						<artifactId>org.eclipse.birt.report.tests.engine</artifactId>
+						<version>${birt.version}</version>
+						<classifier>source</classifier>
+					</dependency>
+				</dependencies>
 			</plugin>
 		</plugins>
 	</build>

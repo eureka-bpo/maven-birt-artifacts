@@ -54,6 +54,7 @@
 		<nexus-staging-maven-plugin.version>1.6.13</nexus-staging-maven-plugin.version> 
 
 		<birt.version>4.15.0.v202403260939</birt.version>
+		<birt.repository>https://p2repository.com/mvn3/birt-4.15.0/</birt.repository>
 	</properties>
 
 	<build>
@@ -107,8 +108,14 @@
 
 	<repositories>
 		<repository>
-			<id>birt-4.15.0</id>
-			<url>https://p2repository.com/mvn3/birt-4.15.0/</url>
+			<id>birt-repo</id>
+			<url>${birt.repository}</url>
 		</repository>
 	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>birt-repo</id>
+			<url>${birt.repository}</url>
+		</pluginRepository>
+	</pluginRepositories>
 </project>
