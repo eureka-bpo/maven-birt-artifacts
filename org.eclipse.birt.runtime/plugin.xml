@@ -2,7 +2,7 @@
 <plugin>
 <!--import from org.eclipse.birt.report.data.oda.jdbc-->
      <extension-point id="org.eclipse.birt.report.data.oda.jdbc.driverinfo" name="JDBC Driver Information Extension" schema="schema/driverinfo.exsd"/>
-   			
+
    <extension point="org.eclipse.datatools.connectivity.oda.dataSource">
       <dataSource defaultDisplayName="JDBC Data Source" driverClass="org.eclipse.birt.report.data.oda.jdbc.OdaJdbcDriver" id="org.eclipse.birt.report.data.oda.jdbc" odaVersion="3.1" setThreadContextClassLoader="false">
          <properties>
@@ -48,7 +48,7 @@
          <dataTypeMapping nativeDataType="DATE" nativeDataTypeCode="91" odaScalarDataType="Date"/>
          <dataTypeMapping nativeDataType="TIME" nativeDataTypeCode="92" odaScalarDataType="Time"/>
          <dataTypeMapping nativeDataType="TIMESTAMP" nativeDataTypeCode="93" odaScalarDataType="Timestamp"/>
-               
+
          <!--For Oracle TIMESTAMPTZ type -->
          <dataTypeMapping nativeDataType="TIMESTAMPTZ" nativeDataTypeCode="-101" odaScalarDataType="Timestamp"/>
          <!--For Oracle TIMESTAMPLTZ type -->
@@ -106,12 +106,13 @@
       <connectionProfile category="org.eclipse.birt.report.data.oda.jdbc" id="org.eclipse.birt.report.data.oda.jdbc" name="BIRT JDBC Data Source Connection Profile" pingFactory="org.eclipse.datatools.connectivity.oda.profile.OdaConnectionFactory"/>
       <connectionFactory class="org.eclipse.datatools.connectivity.oda.profile.OdaConnectionFactory" id="org.eclipse.datatools.connectivity.oda.IConnection" name="ODA Connection Factory" profile="org.eclipse.birt.report.data.oda.jdbc"/>
    </extension>
-   
+
    <extension point="org.eclipse.birt.report.data.oda.jdbc.driverinfo">
       <jdbcDriver driverClass="org.apache.derby.jdbc.EmbeddedDriver" name="Apache Derby Embedded Driver" urlTemplate="jdbc:derby:[subsubprotocol:]DATABASE[;ATTRIBUTE=VALUE]*"/>
    </extension>
 
 <!--import from org.eclipse.birt.report.data.oda.sampledb-->
+
      <extension point="org.eclipse.datatools.connectivity.oda.dataSource">
       <dataSource defaultDisplayName="Classic Models Inc. Sample Database" driverClass="org.eclipse.birt.report.data.oda.sampledb.SampleDBDriver" id="org.eclipse.birt.report.data.oda.sampledb" odaVersion="3.1" setThreadContextClassLoader="false">
             <properties>
@@ -124,7 +125,7 @@
             </propertyGroup>
             <propertyVisibility name="odaDataSource" visibility="hide"/>
          </properties>
-      </dataSource>   
+      </dataSource>
       <dataSet defaultDisplayName="SQL Select Query" id="org.eclipse.birt.report.data.oda.jdbc.JdbcSelectDataSet">
             <dataTypeMapping nativeDataType="BIT" nativeDataTypeCode="-7" odaScalarDataType="Integer"/>
             <dataTypeMapping nativeDataType="TINYINT" nativeDataTypeCode="-6" odaScalarDataType="Integer"/>
@@ -160,7 +161,7 @@
       <connectionProfile category="org.eclipse.birt.report.data.oda.sampledb" id="org.eclipse.birt.report.data.oda.sampledb" name="BIRT Sample DB Data Source Connection Profile" pingFactory="org.eclipse.datatools.connectivity.oda.profile.OdaConnectionFactory"/>
       <connectionFactory class="org.eclipse.datatools.connectivity.oda.profile.OdaConnectionFactory" id="org.eclipse.datatools.connectivity.oda.IConnection" name="ODA Connection Factory" profile="org.eclipse.birt.report.data.oda.sampledb"/>
    </extension>
-   
+
    <extension point="org.eclipse.birt.report.data.oda.jdbc.driverinfo">
       <jdbcDriver connectionFactory="org.eclipse.birt.report.data.oda.sampledb.SampleDBJDBCConnectionFactory" driverClass="org.eclipse.birt.report.data.oda.sampledb.Driver" name="Classic Models Inc. SampleDB Driver" urlTemplate="jdbc:classicmodels:sampledb"/>
    </extension>
@@ -174,8 +175,9 @@
    </extension>
 
 <!--import from org.eclipse.birt.chart.device.pdf-->
+
      <extension point="org.eclipse.birt.chart.engine.devicerenderers">
-      <deviceRenderer description="PDF Chart Renderer" device="org.eclipse.birt.chart.device.pdf.PDFRendererImpl" name="dv.PDF"/>            
+      <deviceRenderer description="PDF Chart Renderer" device="org.eclipse.birt.chart.device.pdf.PDFRendererImpl" name="dv.PDF"/>
    </extension>
    <extension point="org.eclipse.birt.chart.engine.displayservers">
       <displayserver name="ds.PDF" server="org.eclipse.birt.chart.device.pdf.PDFDisplayServer"/>
