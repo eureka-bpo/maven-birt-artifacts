@@ -55,6 +55,7 @@
 
 		<birt.version>4.16.0.v202406131946</birt.version>
 		<birt.repository>https://p2repository.com/mvn3/birt-4.16.0/</birt.repository>
+		<birt.original.repository>https://download.eclipse.org/birt/updates/release/4.16.0/</birt.original.repository>
 	</properties>
 
 	<build>

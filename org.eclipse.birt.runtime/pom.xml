@@ -734,6 +734,33 @@
 	<build>
 		<plugins>
 			<plugin>
+				<artifactId>maven-enforcer-plugin</artifactId>
+				<version>3.5.0</version>
+				<executions>
+					<execution>
+						<id>enforce-p2-checksums</id>
+						<goals>
+							<goal>enforce</goal>
+						</goals>
+						<configuration>
+							<rules>
+								<requireP2ArtifactChecksum>
+									<repositoryId>birt-repo</repositoryId>
+									<originalUrl>${birt.original.repository}</originalUrl>
+								</requireP2ArtifactChecksum>
+							</rules>
+						</configuration>
+					</execution>
+				</executions>
+				<dependencies>
+					<dependency>
+						<groupId>eu.eureka-bpo.maven</groupId>
+						<artifactId>require-p2-artifact-checksum</artifactId>
+						<version>1.0.0</version>
+					</dependency>
+				</dependencies>
+			</plugin>
+			<plugin>
 				<artifactId>maven-dependency-plugin</artifactId>
 				<version>3.6.1</version>
 				<executions>
