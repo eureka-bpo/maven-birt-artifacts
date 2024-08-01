@@ -26,24 +26,24 @@
 			<version>${project.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>com.ibm.icu</artifactId>
-			<version>75.1.0</version>
+			<groupId>com.ibm.icu</groupId>
+			<artifactId>icu4j</artifactId>
+			<version>75.1</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>bcprov</artifactId>
+			<groupId>org.bouncycastle</groupId>
+			<artifactId>bcprov-jdk18on</artifactId>
 			<version>1.78.1</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>org.apache.poi.ooxml.schemas</artifactId>
-			<version>5.2.5.v20231203-1619</version>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml-lite</artifactId>
+			<version>5.2.5</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>org.apache.lucene.core</artifactId>
-			<version>9.10.0.v20240221-0830</version>
+			<groupId>org.apache.lucene</groupId>
+			<artifactId>lucene-core</artifactId>
+			<version>9.10.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
@@ -56,13 +56,13 @@
 			<version>3.132.0.v20240524-2010</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>org.apache.lucene.analysis-smartcn</artifactId>
-			<version>9.10.0.v20240221-0830</version>
+			<groupId>org.apache.lucene</groupId>
+			<artifactId>lucene-analysis-smartcn</artifactId>
+			<version>9.10.0</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>com.github.librepdf.openpdf</artifactId>
+			<groupId>com.github.librepdf</groupId>
+			<artifactId>openpdf</artifactId>
 			<version>1.4.2</version>
 		</dependency>
 		<dependency>
@@ -71,9 +71,9 @@
 			<version>1.4.1.v20231107-0937</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>org.apache.poi</artifactId>
-			<version>5.2.5.v20231203-1619</version>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>5.2.5</version>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
@@ -81,34 +81,40 @@
 			<version>3.126.0.v20240528-0813</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>org.apache.xmlbeans</artifactId>
-			<version>5.2.1.v20240527-0800</version>
+			<groupId>org.apache.xmlbeans</groupId>
+			<artifactId>xmlbeans</artifactId>
+			<version>5.2.1</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>org.mongodb.mongo-java-driver</artifactId>
+			<groupId>org.mongodb</groupId>
+			<artifactId>mongo-java-driver</artifactId>
 			<version>3.12.14</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>org.apache.commons.math3</artifactId>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-math3</artifactId>
 			<version>3.6.1</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>org.apache.poi.ooxml</artifactId>
-			<version>5.2.5.v20231203-1619</version>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>5.2.5</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>org.apache.lucene.analysis-common</artifactId>
-			<version>9.10.0.v20240221-0830</version>
+			<groupId>org.apache.lucene</groupId>
+			<artifactId>lucene-analysis-common</artifactId>
+			<version>9.10.0</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>org.apache.xerces</artifactId>
-			<version>2.12.2.v20230928-1306</version>
+			<groupId>xerces</groupId>
+			<artifactId>xercesImpl</artifactId>
+			<version>2.12.2</version>
+			<exclusions>
+				<exclusion>
+					<groupId>xml-apis</groupId>
+					<artifactId>xml-apis</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
@@ -116,14 +122,20 @@
 			<version>3.20.0.v20240509-1421</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>org.mozilla.rhino</artifactId>
+			<groupId>org.mozilla</groupId>
+			<artifactId>rhino</artifactId>
 			<version>1.7.15</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>com.sun.jna.platform</artifactId>
+			<groupId>net.java.dev.jna</groupId>
+			<artifactId>jna-platform</artifactId>
 			<version>5.14.0</version>
+			<exclusions>
+				<exclusion>
+					<groupId>net.java.dev.jna</groupId>
+					<artifactId>jna</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
@@ -136,9 +148,15 @@
 			<version>3.34.0.v20240502-1134</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>org.apache.commons.commons-compress</artifactId>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-compress</artifactId>
 			<version>1.26.2</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.apache.commons</groupId>
+					<artifactId>commons-lang3</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
@@ -146,23 +164,39 @@
 			<version>3.20.200.v20240513-1323</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>org.apache.batik.bridge</artifactId>
-			<version>1.17.0.v20231215-1130</version>
+			<groupId>org.apache.xmlgraphics</groupId>
+			<artifactId>batik-bridge</artifactId>
+			<version>1.17</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.apache.xmlgraphics</groupId>
+					<artifactId>batik-shared-resources</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>xml-apis</groupId>
+					<artifactId>xml-apis-ext</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>org.apache.commons.commons-collections4</artifactId>
-			<version>4.4.0</version>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-collections4</artifactId>
+			<version>4.4</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>org.apache.xmlgraphics</artifactId>
-			<version>2.9.0.v20230916-1600</version>
+			<groupId>org.apache.xmlgraphics</groupId>
+			<artifactId>xmlgraphics-commons</artifactId>
+			<version>2.9</version>
+			<exclusions>
+				<exclusion>
+					<groupId>commons-logging</groupId>
+					<artifactId>commons-logging</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>bcutil</artifactId>
+			<groupId>org.bouncycastle</groupId>
+			<artifactId>bcutil-jdk18on</artifactId>
 			<version>1.78.1</version>
 		</dependency>
 		<dependency>
@@ -171,34 +205,50 @@
 			<version>3.16.0.202405290843</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>org.apache.lucene.queries</artifactId>
-			<version>9.10.0.v20240221-0830</version>
+			<groupId>org.apache.lucene</groupId>
+			<artifactId>lucene-queries</artifactId>
+			<version>9.10.0</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>org.apache.batik.anim</artifactId>
-			<version>1.17.0.v20231215-1130</version>
+			<groupId>org.apache.xmlgraphics</groupId>
+			<artifactId>batik-anim</artifactId>
+			<version>1.17</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.apache.xmlgraphics</groupId>
+					<artifactId>batik-shared-resources</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>xml-apis</groupId>
+					<artifactId>xml-apis-ext</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>org.apache.commons.commons-io</artifactId>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
 			<version>2.16.1</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>bcpg</artifactId>
+			<groupId>org.bouncycastle</groupId>
+			<artifactId>bcpg-jdk18on</artifactId>
 			<version>1.78.1</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>org.apache.lucene.queryparser</artifactId>
-			<version>9.10.0.v20240221-0830</version>
+			<groupId>org.apache.lucene</groupId>
+			<artifactId>lucene-queryparser</artifactId>
+			<version>9.10.0</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>org.apache.batik.awt.util</artifactId>
-			<version>1.17.0.v20231215-1130</version>
+			<groupId>org.apache.xmlgraphics</groupId>
+			<artifactId>batik-awt-util</artifactId>
+			<version>1.17</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.apache.xmlgraphics</groupId>
+					<artifactId>batik-shared-resources</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
@@ -206,14 +256,14 @@
 			<version>3.206.0.v20240524-2010</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>org.sat4j.pb</artifactId>
-			<version>2.3.6.v20201214</version>
+			<groupId>org.ow2.sat4j</groupId>
+			<artifactId>org.ow2.sat4j.pb</artifactId>
+			<version>2.3.6</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>org.sat4j.core</artifactId>
-			<version>2.3.6.v20201214</version>
+			<groupId>org.ow2.sat4j</groupId>
+			<artifactId>org.ow2.sat4j.core</artifactId>
+			<version>2.3.6</version>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
@@ -226,9 +276,15 @@
 			<version>2.4.300.v20240321-1245</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
+			<groupId>org.apache.felix</groupId>
 			<artifactId>org.apache.felix.scr</artifactId>
 			<version>2.2.10</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.codehaus.mojo</groupId>
+					<artifactId>animal-sniffer-annotations</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
@@ -236,33 +292,58 @@
 			<version>2.30.0.v20240314-0928</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>org.apache.commons.codec</artifactId>
-			<version>1.14.0.v20221112-0806</version>
-		</dependency>
-		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>org.apache.batik.css</artifactId>
-			<version>1.17.0.v20231215-1130</version>
+			<groupId>org.apache.xmlgraphics</groupId>
+			<artifactId>batik-css</artifactId>
+			<version>1.17</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.apache.xmlgraphics</groupId>
+					<artifactId>batik-shared-resources</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>xml-apis</groupId>
+					<artifactId>xml-apis-ext</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.datatools.connectivity.oda.design</artifactId>
 			<version>3.6.0.202311071249</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.eclipse.birt</groupId>
+					<artifactId>com.ibm.icu</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.datatools.connectivity.sqm.core</artifactId>
 			<version>1.6.0.202311071345</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.eclipse.birt</groupId>
+					<artifactId>
+						org.eclipse.datatools.modelbase.dbdefinition
+					</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.eclipse.birt</groupId>
+					<artifactId>
+						org.eclipse.datatools.modelbase.sql
+					</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>org.apache.commons.commons-codec</artifactId>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
 			<version>1.16.0</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>org.apache.logging.log4j.api</artifactId>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
 			<version>2.23.1</version>
 		</dependency>
 		<dependency>
@@ -299,6 +380,12 @@
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.datatools.connectivity</artifactId>
 			<version>1.15.0.202311071249</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.eclipse.birt</groupId>
+					<artifactId>com.ibm.icu</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
@@ -306,8 +393,8 @@
 			<version>1.15.400.v20240502-1134</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>org.eclipse.jetty.servlet-api</artifactId>
+			<groupId>org.eclipse.jetty.toolchain</groupId>
+			<artifactId>jetty-servlet-api</artifactId>
 			<version>4.0.6</version>
 		</dependency>
 		<dependency>
@@ -319,6 +406,12 @@
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.datatools.connectivity.oda</artifactId>
 			<version>3.7.0.202311071249</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.eclipse.birt</groupId>
+					<artifactId>com.ibm.icu</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
@@ -331,19 +424,35 @@
 			<version>1.3.4.v201005080400</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>org.apache.lucene.sandbox</artifactId>
-			<version>9.10.0.v20240221-0830</version>
+			<groupId>org.apache.lucene</groupId>
+			<artifactId>lucene-sandbox</artifactId>
+			<version>9.10.0</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>org.apache.batik.svggen</artifactId>
-			<version>1.17.0.v20231215-1130</version>
+			<groupId>org.apache.xmlgraphics</groupId>
+			<artifactId>batik-svggen</artifactId>
+			<version>1.17</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.apache.xmlgraphics</groupId>
+					<artifactId>batik-shared-resources</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>org.apache.batik.dom.svg</artifactId>
-			<version>1.17.0.v20231215-1130</version>
+			<groupId>org.apache.xmlgraphics</groupId>
+			<artifactId>batik-svg-dom</artifactId>
+			<version>1.17</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.apache.xmlgraphics</groupId>
+					<artifactId>batik-shared-resources</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>xml-apis</groupId>
+					<artifactId>xml-apis-ext</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
@@ -356,14 +465,20 @@
 			<version>0.14.400.v20240427-1520</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>org.apache.batik.gvt</artifactId>
-			<version>1.17.0.v20231215-1130</version>
+			<groupId>org.apache.xmlgraphics</groupId>
+			<artifactId>batik-gvt</artifactId>
+			<version>1.17</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.apache.xmlgraphics</groupId>
+					<artifactId>batik-shared-resources</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>javax.wsdl</artifactId>
-			<version>1.6.3.v20230730-0710</version>
+			<groupId>wsdl4j</groupId>
+			<artifactId>wsdl4j</artifactId>
+			<version>1.6.3</version>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
@@ -371,9 +486,23 @@
 			<version>0.15.400.v20240321-1245</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>org.apache.batik.dom</artifactId>
-			<version>1.17.0.v20231215-1130</version>
+			<groupId>org.apache.xmlgraphics</groupId>
+			<artifactId>batik-dom</artifactId>
+			<version>1.17</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.apache.xmlgraphics</groupId>
+					<artifactId>batik-shared-resources</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>xml-apis</groupId>
+					<artifactId>xml-apis</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>xml-apis</groupId>
+					<artifactId>xml-apis-ext</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
@@ -396,14 +525,30 @@
 			<version>0.17.400.v20240425-0840</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>org.apache.batik.transcoder</artifactId>
-			<version>1.17.0.v20231215-1130</version>
+			<groupId>org.apache.xmlgraphics</groupId>
+			<artifactId>batik-transcoder</artifactId>
+			<version>1.17</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.apache.xmlgraphics</groupId>
+					<artifactId>batik-shared-resources</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>xml-apis</groupId>
+					<artifactId>xml-apis-ext</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>org.apache.batik.util</artifactId>
-			<version>1.17.0.v20231215-1130</version>
+			<groupId>org.apache.xmlgraphics</groupId>
+			<artifactId>batik-util</artifactId>
+			<version>1.17</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.apache.xmlgraphics</groupId>
+					<artifactId>batik-shared-resources</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
@@ -411,9 +556,9 @@
 			<version>1.0.0.v20230923-0644</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>com.github.virtuald.curvesapi</artifactId>
-			<version>1.8.0.v20230927-1624</version>
+			<groupId>com.github.virtuald</groupId>
+			<artifactId>curvesapi</artifactId>
+			<version>1.08</version>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
@@ -424,11 +569,23 @@
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.equinox.preferences</artifactId>
 			<version>3.11.100.v20240327-0645</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.eclipse.birt</groupId>
+					<artifactId>org.osgi.service.prefs</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>org.apache.batik.codec</artifactId>
-			<version>1.17.0.v20231215-1130</version>
+			<groupId>org.apache.xmlgraphics</groupId>
+			<artifactId>batik-codec</artifactId>
+			<version>1.17</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.apache.xmlgraphics</groupId>
+					<artifactId>batik-shared-resources</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
@@ -456,9 +613,9 @@
 			<version>3.15.300.v20240418-0734</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>org.tukaani.xz</artifactId>
-			<version>1.9.0</version>
+			<groupId>org.tukaani</groupId>
+			<artifactId>xz</artifactId>
+			<version>1.9</version>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
@@ -471,9 +628,21 @@
 			<version>3.5.400.v20240416-0654</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
+			<groupId>org.osgi</groupId>
 			<artifactId>org.osgi.service.http.whiteboard</artifactId>
-			<version>1.1.1.202109301733</version>
+			<version>1.1.1</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.osgi</groupId>
+					<artifactId>
+						org.osgi.namespace.implementation
+					</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.osgi</groupId>
+					<artifactId>osgi.annotation</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
@@ -481,9 +650,9 @@
 			<version>3.9.400.v20240413-1529</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>org.apache.xml.resolver</artifactId>
-			<version>1.2.0.v20230928-1222</version>
+			<groupId>xml-resolver</groupId>
+			<artifactId>xml-resolver</artifactId>
+			<version>1.2</version>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
@@ -496,19 +665,49 @@
 			<version>2.16.0.v20231208-1346</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>org.apache.batik.parser</artifactId>
-			<version>1.17.0.v20231215-1130</version>
+			<groupId>org.apache.xmlgraphics</groupId>
+			<artifactId>batik-parser</artifactId>
+			<version>1.17</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.apache.xmlgraphics</groupId>
+					<artifactId>batik-shared-resources</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>xml-apis</groupId>
+					<artifactId>xml-apis-ext</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.datatools.connectivity.apache.derby</artifactId>
 			<version>1.3.0.202311071249</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.eclipse.birt</groupId>
+					<artifactId>
+						org.eclipse.datatools.modelbase.dbdefinition
+					</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.eclipse.birt</groupId>
+					<artifactId>
+						org.eclipse.datatools.modelbase.sql
+					</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
+			<groupId>org.osgi</groupId>
 			<artifactId>org.osgi.util.promise</artifactId>
-			<version>1.3.0.202212101352</version>
+			<version>1.3.0</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.osgi</groupId>
+					<artifactId>osgi.annotation</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
@@ -521,9 +720,15 @@
 			<version>3.4.0.202311071249</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>org.apache.commons.discovery</artifactId>
-			<version>0.5.0</version>
+			<groupId>commons-discovery</groupId>
+			<artifactId>commons-discovery</artifactId>
+			<version>0.5</version>
+			<exclusions>
+				<exclusion>
+					<groupId>commons-logging</groupId>
+					<artifactId>commons-logging</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
@@ -546,9 +751,19 @@
 			<version>1.2.0.v20180409-1502</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
+			<groupId>org.osgi</groupId>
 			<artifactId>org.osgi.service.component</artifactId>
-			<version>1.5.1.202212101352</version>
+			<version>1.5.1</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.osgi</groupId>
+					<artifactId>org.osgi.namespace.extender</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.osgi</groupId>
+					<artifactId>osgi.annotation</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
@@ -574,11 +789,33 @@
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.urischeme</artifactId>
 			<version>1.3.300.v20240424-0956</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.eclipse.birt</groupId>
+					<artifactId>com.sun.jna</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.eclipse.birt</groupId>
+					<artifactId>com.sun.jna.platform</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
+			<groupId>org.osgi</groupId>
 			<artifactId>org.osgi.service.cm</artifactId>
-			<version>1.6.1.202109301733</version>
+			<version>1.6.1</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.osgi</groupId>
+					<artifactId>
+						org.osgi.namespace.implementation
+					</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.osgi</groupId>
+					<artifactId>osgi.annotation</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
@@ -601,14 +838,32 @@
 			<version>3.5.0.202311071249</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
+			<groupId>org.osgi</groupId>
 			<artifactId>org.osgi.service.event</artifactId>
-			<version>1.4.1.202109301733</version>
+			<version>1.4.1</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.osgi</groupId>
+					<artifactId>
+						org.osgi.namespace.implementation
+					</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.osgi</groupId>
+					<artifactId>osgi.annotation</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
+			<groupId>org.osgi</groupId>
 			<artifactId>org.osgi.service.wireadmin</artifactId>
-			<version>1.0.2.202109301733</version>
+			<version>1.0.2</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.osgi</groupId>
+					<artifactId>osgi.annotation</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
@@ -621,9 +876,15 @@
 			<version>0.17.500.v20240419-1233</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>org.apache.batik.xml</artifactId>
-			<version>1.17.0.v20231215-1130</version>
+			<groupId>org.apache.xmlgraphics</groupId>
+			<artifactId>batik-xml</artifactId>
+			<version>1.17</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.apache.xmlgraphics</groupId>
+					<artifactId>batik-shared-resources</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
@@ -631,9 +892,15 @@
 			<version>2.3.200.v20240321-1450</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
+			<groupId>org.osgi</groupId>
 			<artifactId>org.osgi.service.useradmin</artifactId>
-			<version>1.1.1.202109301733</version>
+			<version>1.1.1</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.osgi</groupId>
+					<artifactId>osgi.annotation</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
@@ -641,8 +908,8 @@
 			<version>1.7.100.v20240321-1445</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>javax.xml.rpc-api</artifactId>
+			<groupId>jakarta.xml.rpc</groupId>
+			<artifactId>jakarta.xml.rpc-api</artifactId>
 			<version>1.1.4</version>
 		</dependency>
 		<dependency>
@@ -651,19 +918,31 @@
 			<version>1.3.0.202311071249</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>com.zaxxer.sparsebits</artifactId>
-			<version>1.3.0.v20230929-1000</version>
+			<groupId>com.zaxxer</groupId>
+			<artifactId>SparseBitSet</artifactId>
+			<version>1.3</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>org.apache.batik.script</artifactId>
-			<version>1.17.0.v20231215-1130</version>
+			<groupId>org.apache.xmlgraphics</groupId>
+			<artifactId>batik-script</artifactId>
+			<version>1.17</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.apache.xmlgraphics</groupId>
+					<artifactId>batik-shared-resources</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
+			<groupId>org.osgi</groupId>
 			<artifactId>org.osgi.service.upnp</artifactId>
-			<version>1.2.1.202109301733</version>
+			<version>1.2.1</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.osgi</groupId>
+					<artifactId>osgi.annotation</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
@@ -671,9 +950,25 @@
 			<version>0.14.400.v20240424-0956</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
+			<groupId>org.osgi</groupId>
 			<artifactId>org.osgi.service.metatype</artifactId>
-			<version>1.4.1.202109301733</version>
+			<version>1.4.1</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.osgi</groupId>
+					<artifactId>org.osgi.namespace.extender</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.osgi</groupId>
+					<artifactId>
+						org.osgi.namespace.implementation
+					</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.osgi</groupId>
+					<artifactId>osgi.annotation</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
@@ -689,6 +984,52 @@
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.osgi.services</artifactId>
 			<version>3.12.100.v20240327-0645</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.eclipse.birt</groupId>
+					<artifactId>org.osgi.service.cm</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.eclipse.birt</groupId>
+					<artifactId>org.osgi.service.component</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.eclipse.birt</groupId>
+					<artifactId>org.osgi.service.device</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.eclipse.birt</groupId>
+					<artifactId>org.osgi.service.event</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.eclipse.birt</groupId>
+					<artifactId>
+						org.osgi.service.http.whiteboard
+					</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.eclipse.birt</groupId>
+					<artifactId>org.osgi.service.metatype</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.eclipse.birt</groupId>
+					<artifactId>
+						org.osgi.service.provisioning
+					</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.eclipse.birt</groupId>
+					<artifactId>org.osgi.service.upnp</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.eclipse.birt</groupId>
+					<artifactId>org.osgi.service.useradmin</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.eclipse.birt</groupId>
+					<artifactId>org.osgi.service.wireadmin</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
@@ -696,7 +1037,7 @@
 			<version>1.6.300.v20231201-1637</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
+			<groupId>jakarta.annotation</groupId>
 			<artifactId>jakarta.annotation-api</artifactId>
 			<version>2.1.1</version>
 		</dependency>
@@ -711,9 +1052,15 @@
 			<version>1.3.0.202311071249</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
+			<groupId>org.osgi</groupId>
 			<artifactId>org.osgi.util.function</artifactId>
-			<version>1.2.0.202109301733</version>
+			<version>1.2.0</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.osgi</groupId>
+					<artifactId>osgi.annotation</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
@@ -721,24 +1068,48 @@
 			<version>1.3.0.202311071249</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
+			<groupId>org.osgi</groupId>
 			<artifactId>org.osgi.service.device</artifactId>
-			<version>1.1.1.202109301733</version>
+			<version>1.1.1</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.osgi</groupId>
+					<artifactId>osgi.annotation</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>org.apache.batik.i18n</artifactId>
-			<version>1.17.0.v20231215-1130</version>
+			<groupId>org.apache.xmlgraphics</groupId>
+			<artifactId>batik-i18n</artifactId>
+			<version>1.17</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.apache.xmlgraphics</groupId>
+					<artifactId>batik-shared-resources</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
+			<groupId>org.osgi</groupId>
 			<artifactId>org.osgi.service.prefs</artifactId>
-			<version>1.1.2.202109301733</version>
+			<version>1.1.2</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.osgi</groupId>
+					<artifactId>osgi.annotation</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>org.apache.batik.ext</artifactId>
-			<version>1.17.0.v20231215-1130</version>
+			<groupId>org.apache.xmlgraphics</groupId>
+			<artifactId>batik-ext</artifactId>
+			<version>1.17</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.apache.xmlgraphics</groupId>
+					<artifactId>batik-shared-resources</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
@@ -756,9 +1127,15 @@
 			<version>1.3.0.202311071249</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>org.apache.batik.constants</artifactId>
-			<version>1.17.0.v20231215-1130</version>
+			<groupId>org.apache.xmlgraphics</groupId>
+			<artifactId>batik-constants</artifactId>
+			<version>1.17</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.apache.xmlgraphics</groupId>
+					<artifactId>batik-shared-resources</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
@@ -771,9 +1148,9 @@
 			<version>1.8.400.v20240413-1529</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
+			<groupId>org.osgi</groupId>
 			<artifactId>org.osgi.service.provisioning</artifactId>
-			<version>1.2.0.201505202024</version>
+			<version>1.2.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
@@ -786,8 +1163,8 @@
 			<version>0.18.300.v20240413-1529</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt</groupId>
-			<artifactId>jakarta.inject.jakarta.inject-api</artifactId>
+			<groupId>jakarta.inject</groupId>
+			<artifactId>jakarta.inject-api</artifactId>
 			<version>2.0.1</version>
 		</dependency>
 		<dependency>
