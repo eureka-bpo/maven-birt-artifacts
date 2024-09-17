@@ -750,21 +750,14 @@
 							</archive>
 						</configuration>
 					</execution>
-				</executions>
-			</plugin>
-			<plugin>
-				<artifactId>maven-javadoc-plugin</artifactId>
-				<version>${maven-javadoc-plugin.version}</version>
-				<executions>
 					<execution>
-						<id>javadoc</id>
+						<id>javadoc-jar</id>
 						<phase>verify</phase>
 						<goals>
 							<goal>jar</goal>
 						</goals>
 						<configuration>
-							<sourcepath>${project.build.directory}/dependencies-sources</sourcepath>
-							<failOnError>false</failOnError>
+							<classifier>javadoc</classifier>
 						</configuration>
 					</execution>
 				</executions>
