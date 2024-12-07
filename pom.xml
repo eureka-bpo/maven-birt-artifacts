@@ -6,12 +6,12 @@
 
 	<groupId>eu.eureka-bpo.birt</groupId>
 	<artifactId>parent</artifactId>
-	<version>SNAPSHOT</version>
+	<version>4.18.0.0</version>
 	<packaging>pom</packaging>
 
 	<name>Eclipse BIRT Maven artifacts parent</name>
 	<description>Eclipse BIRT Maven artifacts parent</description>
-	<url>https://github.com/eureka-bpo/maven-birt-artifacts/tree/master</url>
+	<url>https://github.com/eureka-bpo/maven-birt-artifacts/tree/4.18.0.0</url>
 
 	<scm>
 		<url>https://github.com/eureka-bpo/maven-birt-artifacts.git</url>
