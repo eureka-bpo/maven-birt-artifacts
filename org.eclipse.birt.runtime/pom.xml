@@ -674,13 +674,13 @@
 					<dependency>
 						<groupId>eu.eureka-bpo.maven</groupId>
 						<artifactId>require-p2-artifact-checksum</artifactId>
-						<version>1.0.0</version>
+						<version>1.0.1</version>
 					</dependency>
 				</dependencies>
 			</plugin>
 			<plugin>
 				<artifactId>maven-dependency-plugin</artifactId>
-				<version>3.6.1</version>
+				<version>3.8.1</version>
 				<executions>
 					<execution>
 						<id>unpack-dependencies-sources</id>
@@ -725,7 +725,7 @@
 			</plugin>
 			<plugin>
 				<artifactId>maven-jar-plugin</artifactId>
-				<version>3.3.0</version>
+				<version>3.4.2</version>
 				<executions>
 					<execution>
 						<id>default-jar</id>
