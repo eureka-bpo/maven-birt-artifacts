@@ -17,7 +17,7 @@
 	<properties>
 		<maven.main.skip>true</maven.main.skip>
 		<maven.test.skip>true</maven.test.skip>
-		<birt.version>4.17.0.v202408042054</birt.version>
+		<birt.version>4.18.0.v202409161007</birt.version>
 	</properties>
 
 	<dependencies>
