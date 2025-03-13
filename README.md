@@ -18,8 +18,8 @@ Use it by declaring in your project's pom.xml:
 
 	<repositories>
 		<repository>
-			<id>birt-4.18.0</id>
-			<url>https://p2repository.com/mvn4/birt-4.18.0/</url>
+			<id>birt-4.19.0</id>
+			<url>https://p2repository.com/mvn4/birt-4.19.0/</url>
 		</repository>
 	</repositories>
 ```
