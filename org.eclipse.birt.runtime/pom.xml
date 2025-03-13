@@ -7,12 +7,12 @@
 	<parent>
 		<groupId>eu.eureka-bpo.birt</groupId>
 		<artifactId>parent</artifactId>
-		<version>SNAPSHOT</version>
+		<version>4.19.0.0</version>
 	</parent>
 	<artifactId>org.eclipse.birt.runtime</artifactId>
 	<packaging>jar</packaging>
 
-	<url>https://github.com/eureka-bpo/maven-birt-artifacts/tree/master/org.eclipse.birt.runtime</url>
+	<url>https://github.com/eureka-bpo/maven-birt-artifacts/tree/4.19.0.0/org.eclipse.birt.runtime</url>
 
 	<properties>
 		<maven.main.skip>true</maven.main.skip>
