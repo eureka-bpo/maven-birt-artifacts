@@ -17,7 +17,7 @@
 	<properties>
 		<maven.main.skip>true</maven.main.skip>
 		<maven.test.skip>true</maven.test.skip>
-		<birt.version>4.19.0.v202503120947</birt.version>
+		<birt.version>4.20.0.v202503121355</birt.version>
 	</properties>
 
 	<dependencies>
@@ -35,7 +35,7 @@
 		<dependency>
 			<groupId>com.github.librepdf</groupId>
 			<artifactId>openpdf</artifactId>
-			<version>2.0.3</version>
+			<version>2.0.4</version>
 		</dependency>
 		<dependency>
 			<groupId>com.github.virtuald</groupId>
@@ -45,12 +45,12 @@
 		<dependency>
 			<groupId>com.ibm.icu</groupId>
 			<artifactId>icu4j</artifactId>
-			<version>76.1</version>
+			<version>77.1</version>
 		</dependency>
 		<dependency>
 			<groupId>net.java.dev.jna</groupId>
 			<artifactId>jna-platform</artifactId>
-			<version>5.16.0</version>
+			<version>5.17.0</version>
 			<exclusions>
 				<exclusion>
 					<groupId>net.java.dev.jna</groupId>
@@ -106,7 +106,7 @@
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-collections4</artifactId>
-			<version>4.4</version>
+			<version>4.5.0</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.commons</groupId>
@@ -122,7 +122,7 @@
 		<dependency>
 			<groupId>commons-io</groupId>
 			<artifactId>commons-io</artifactId>
-			<version>2.18.0</version>
+			<version>2.19.0</version>
 		</dependency>
 		<dependency>
 			<groupId>commons-discovery</groupId>
@@ -174,17 +174,17 @@
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
-			<version>5.4.0</version>
+			<version>5.4.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml</artifactId>
-			<version>5.4.0</version>
+			<version>5.4.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml-lite</artifactId>
-			<version>5.4.0</version>
+			<version>5.4.1</version>
 		</dependency>
 		<dependency>
 			<groupId>xerces</groupId>
@@ -205,7 +205,7 @@
 		<dependency>
 			<groupId>org.apache.xmlgraphics</groupId>
 			<artifactId>xmlgraphics-commons</artifactId>
-			<version>2.10</version>
+			<version>2.11</version>
 			<exclusions>
 				<exclusion>
 					<groupId>commons-logging</groupId>
@@ -216,7 +216,7 @@
 		<dependency>
 			<groupId>org.apache.xmlgraphics</groupId>
 			<artifactId>fop-core</artifactId>
-			<version>2.10</version>
+			<version>2.11</version>
 			<exclusions>
 				<exclusion>
 					<groupId>org.apache.xmlgraphics</groupId>
@@ -247,22 +247,22 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.core.filesystem</artifactId>
-			<version>1.11.100.v20241022-0806</version>
+			<version>1.11.200.v20250513-1234</version>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.core.jobs</artifactId>
-			<version>3.15.500.v20250204-0817</version>
+			<version>3.15.600.v20250513-1234</version>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.core.resources</artifactId>
-			<version>3.22.100.v20250206-1238</version>
+			<version>3.22.200.v20250513-1234</version>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.core.runtime</artifactId>
-			<version>3.33.0.v20250206-0919</version>
+			<version>3.33.100.v20250516-0931</version>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
@@ -348,12 +348,12 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.emf.common</artifactId>
-			<version>2.41.0.v20241204-1554</version>
+			<version>2.42.0.v20250401-0947</version>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.emf.ecore</artifactId>
-			<version>2.38.0.v20241018-1213</version>
+			<version>2.39.0.v20250401-0947</version>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
@@ -363,27 +363,27 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.emf.ecore.xmi</artifactId>
-			<version>2.38.0.v20240721-0634</version>
+			<version>2.39.0.v20250414-1351</version>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.equinox.app</artifactId>
-			<version>1.7.300.v20250130-0528</version>
+			<version>1.7.400.v20250515-0510</version>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.equinox.common</artifactId>
-			<version>3.20.0.v20250129-1348</version>
+			<version>3.20.100.v20250506-0427</version>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.equinox.event</artifactId>
-			<version>1.7.200.v20250129-1349</version>
+			<version>1.7.300.v20250518-0609</version>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.equinox.preferences</artifactId>
-			<version>3.11.300.v20250130-0533</version>
+			<version>3.11.400.v20250520-0549</version>
 			<exclusions>
 				<exclusion>
 					<groupId>org.eclipse.birt</groupId>
@@ -394,12 +394,12 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.equinox.registry</artifactId>
-			<version>3.12.300.v20250129-1129</version>
+			<version>3.12.400.v20250505-2005</version>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.equinox.simpleconfigurator</artifactId>
-			<version>1.5.400.v20250129-0942</version>
+			<version>1.5.500.v20250306-1127</version>
 		</dependency>
 		<dependency>
 			<groupId>org.eclipse.jetty.toolchain</groupId>
@@ -414,7 +414,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.osgi</artifactId>
-			<version>3.23.0.v20250228-0640</version>
+			<version>3.23.100.v20250514-1759</version>
 		</dependency>
 		<dependency>
 			<groupId>org.mongodb</groupId>
@@ -429,27 +429,27 @@
 		<dependency>
 			<groupId>org.ow2.asm</groupId>
 			<artifactId>asm</artifactId>
-			<version>9.7.1</version>
+			<version>9.8</version>
 		</dependency>
 		<dependency>
 			<groupId>org.ow2.asm</groupId>
 			<artifactId>asm-commons</artifactId>
-			<version>9.7.1</version>
+			<version>9.8</version>
 		</dependency>
 		<dependency>
 			<groupId>org.ow2.asm</groupId>
 			<artifactId>asm-tree</artifactId>
-			<version>9.7.1</version>
+			<version>9.8</version>
 		</dependency>
 		<dependency>
 			<groupId>org.ow2.asm</groupId>
 			<artifactId>asm-analysis</artifactId>
-			<version>9.7.1</version>
+			<version>9.8</version>
 		</dependency>
 		<dependency>
 			<groupId>org.ow2.asm</groupId>
 			<artifactId>asm-util</artifactId>
-			<version>9.7.1</version>
+			<version>9.8</version>
 		</dependency>
 		<dependency>
 			<groupId>org.osgi</groupId>
@@ -519,12 +519,12 @@
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
-			<version>2.0.16</version>
+			<version>2.0.17</version>
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-simple</artifactId>
-			<version>2.0.16</version>
+			<version>2.0.17</version>
 		</dependency>
 	</dependencies>
 

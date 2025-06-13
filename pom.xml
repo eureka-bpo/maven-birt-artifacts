@@ -53,8 +53,8 @@
 		<maven-gpg-plugin.version>3.2.7</maven-gpg-plugin.version>
 		<nexus-staging-maven-plugin.version>1.6.14</nexus-staging-maven-plugin.version> 
 
-		<birt.repository>https://p2repository.com/mvn4/birt-4.19.0/</birt.repository>
-		<birt.original.repository>https://download.eclipse.org/birt/updates/release/4.19.0/</birt.original.repository>
+		<birt.repository>https://p2repository.com/mvn4/birt-4.20.0/</birt.repository>
+		<birt.original.repository>https://download.eclipse.org/birt/updates/release/4.20.0/</birt.original.repository>
 	</properties>
 
 	<build>
