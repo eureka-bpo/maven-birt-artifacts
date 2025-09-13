@@ -23,7 +23,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.report.data.oda.jdbc</artifactId>
-			<version>4.20.0.v202503121355</version>
+			<version>4.21.0.v202506161037</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -34,7 +34,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.report.data.oda.sampledb</artifactId>
-			<version>4.20.0.v202503121355</version>
+			<version>4.21.0.v202506161037</version>
 			<scope>provided</scope>
 			<exclusions>
 				<exclusion>
@@ -46,7 +46,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.report.engine.fonts</artifactId>
-			<version>4.20.0.v202504242111</version>
+			<version>4.21.0.v202506160823</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -57,7 +57,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>uk.co.spudsoft.birt.emitters.excel</artifactId>
-			<version>4.20.0.v202505082006</version>
+			<version>4.21.0.v202508131746</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -68,7 +68,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.axis.overlay</artifactId>
-			<version>4.20.0.v202503121355</version>
+			<version>4.21.0.v202506160823</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -79,7 +79,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.chart.device.extension</artifactId>
-			<version>4.20.0.v202503121355</version>
+			<version>4.21.0.v202506161037</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -90,7 +90,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.chart.device.pdf</artifactId>
-			<version>4.20.0.v202503121355</version>
+			<version>4.21.0.v202506161037</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -101,7 +101,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.chart.device.svg</artifactId>
-			<version>4.20.0.v202503121355</version>
+			<version>4.21.0.v202506161037</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -112,7 +112,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.chart.engine.extension</artifactId>
-			<version>4.20.0.v202503121355</version>
+			<version>4.21.0.v202506161037</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -123,7 +123,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.chart.engine</artifactId>
-			<version>4.20.0.v202503121355</version>
+			<version>4.21.0.v202506160823</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -134,7 +134,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.chart.examples.core</artifactId>
-			<version>4.20.0.v202503121355</version>
+			<version>4.21.0.v202506161037</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -145,7 +145,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.chart.reportitem</artifactId>
-			<version>4.20.0.v202503121355</version>
+			<version>4.21.0.v202506161037</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -156,7 +156,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.core.script.function</artifactId>
-			<version>4.20.0.v202503121355</version>
+			<version>4.21.0.v202506161037</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -167,7 +167,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.core</artifactId>
-			<version>4.20.0.v202503220741</version>
+			<version>4.21.0.v202506160823</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -178,7 +178,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.data.aggregation</artifactId>
-			<version>4.20.0.v202503121355</version>
+			<version>4.21.0.v202506161037</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -189,7 +189,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.data.oda.mongodb</artifactId>
-			<version>4.20.0.v202503121355</version>
+			<version>4.21.0.v202506160823</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -200,7 +200,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.data.oda.pojo</artifactId>
-			<version>4.20.0.v202503121355</version>
+			<version>4.21.0.v202506160823</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -211,7 +211,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.data</artifactId>
-			<version>4.20.0.v202503121355</version>
+			<version>4.21.0.v202507080633</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -222,7 +222,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.report.data.adapter</artifactId>
-			<version>4.20.0.v202503121355</version>
+			<version>4.21.0.v202506161037</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -233,7 +233,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.report.data.bidi.utils</artifactId>
-			<version>4.20.0.v202503121355</version>
+			<version>4.21.0.v202506161037</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -244,7 +244,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.report.data.oda.excel</artifactId>
-			<version>4.20.0.v202503121355</version>
+			<version>4.21.0.v202506160823</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -255,7 +255,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.report.data.oda.hive</artifactId>
-			<version>4.20.0.v202503121355</version>
+			<version>4.21.0.v202506161037</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -266,7 +266,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.report.data.oda.jdbc.dbprofile.sampledb</artifactId>
-			<version>4.20.0.v202503121355</version>
+			<version>4.21.0.v202506161037</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -277,7 +277,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.report.data.oda.jdbc.dbprofile</artifactId>
-			<version>4.20.0.v202503121355</version>
+			<version>4.21.0.v202506161037</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -288,7 +288,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.report.data.oda.xml</artifactId>
-			<version>4.20.0.v202503121355</version>
+			<version>4.21.0.v202506160823</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -299,7 +299,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.report.engine.dataextraction.csv</artifactId>
-			<version>4.20.0.v202505232032</version>
+			<version>4.21.0.v202506161037</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -310,7 +310,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.report.engine.dataextraction</artifactId>
-			<version>4.20.0.v202505232032</version>
+			<version>4.21.0.v202506161037</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -321,7 +321,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.report.engine.emitter.config.docx</artifactId>
-			<version>4.20.0.v202503121355</version>
+			<version>4.21.0.v202506161037</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -332,7 +332,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.report.engine.emitter.config.excel</artifactId>
-			<version>4.20.0.v202503121355</version>
+			<version>4.21.0.v202506161037</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -343,7 +343,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.report.engine.emitter.config.html</artifactId>
-			<version>4.20.0.v202503121355</version>
+			<version>4.21.0.v202506161037</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -354,7 +354,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.report.engine.emitter.config.odp</artifactId>
-			<version>4.20.0.v202503121355</version>
+			<version>4.21.0.v202506161037</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -365,7 +365,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.report.engine.emitter.config.ods</artifactId>
-			<version>4.20.0.v202503121355</version>
+			<version>4.21.0.v202506161037</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -376,7 +376,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.report.engine.emitter.config.odt</artifactId>
-			<version>4.20.0.v202503121355</version>
+			<version>4.21.0.v202506161037</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -387,7 +387,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.report.engine.emitter.config.pdf</artifactId>
-			<version>4.20.0.v202503121355</version>
+			<version>4.21.0.v202506161037</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -398,7 +398,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.report.engine.emitter.config.postscript</artifactId>
-			<version>4.20.0.v202503121355</version>
+			<version>4.21.0.v202506161037</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -409,7 +409,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.report.engine.emitter.config.ppt</artifactId>
-			<version>4.20.0.v202503121355</version>
+			<version>4.21.0.v202506161037</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -420,7 +420,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.report.engine.emitter.config.pptx</artifactId>
-			<version>4.20.0.v202503121355</version>
+			<version>4.21.0.v202506161037</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -431,7 +431,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.report.engine.emitter.config.wpml</artifactId>
-			<version>4.20.0.v202503121355</version>
+			<version>4.21.0.v202506161037</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -442,7 +442,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.report.engine.emitter.config</artifactId>
-			<version>4.20.0.v202503121355</version>
+			<version>4.21.0.v202506161037</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -453,7 +453,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.report.engine.emitter.docx</artifactId>
-			<version>4.20.0.v202503121355</version>
+			<version>4.21.0.v202506161037</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -464,7 +464,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.report.engine.emitter.html</artifactId>
-			<version>4.20.0.v202505191938</version>
+			<version>4.21.0.v202506161037</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -475,7 +475,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.report.engine.emitter.odp</artifactId>
-			<version>4.20.0.v202503121355</version>
+			<version>4.21.0.v202506161037</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -486,7 +486,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.report.engine.emitter.ods</artifactId>
-			<version>4.20.0.v202503121355</version>
+			<version>4.21.0.v202506161037</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -497,7 +497,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.report.engine.emitter.odt</artifactId>
-			<version>4.20.0.v202503121355</version>
+			<version>4.21.0.v202506161037</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -508,7 +508,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.report.engine.emitter.pdf</artifactId>
-			<version>4.20.0.v202505101657</version>
+			<version>4.21.0.v202506161037</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -519,7 +519,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.report.engine.emitter.postscript</artifactId>
-			<version>4.20.0.v202503121355</version>
+			<version>4.21.0.v202506161037</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -530,7 +530,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.report.engine.emitter.ppt</artifactId>
-			<version>4.20.0.v202503200635</version>
+			<version>4.21.0.v202506161037</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -541,7 +541,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.report.engine.emitter.pptx</artifactId>
-			<version>4.20.0.v202503200635</version>
+			<version>4.21.0.v202506161037</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -552,7 +552,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.report.engine.emitter.prototype.excel</artifactId>
-			<version>4.20.0.v202503121355</version>
+			<version>4.21.0.v202506161037</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -563,7 +563,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.report.engine.emitter.wpml</artifactId>
-			<version>4.20.0.v202503121355</version>
+			<version>4.21.0.v202506161037</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -574,7 +574,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.report.engine.odf</artifactId>
-			<version>4.20.0.v202503121355</version>
+			<version>4.21.0.v202506161037</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -585,7 +585,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.report.engine.ooxml</artifactId>
-			<version>4.20.0.v202503121355</version>
+			<version>4.21.0.v202506161037</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -596,7 +596,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.report.engine.script.javascript</artifactId>
-			<version>4.20.0.v202503121355</version>
+			<version>4.21.0.v202508071536</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -607,7 +607,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.report.engine</artifactId>
-			<version>4.20.0.v202506011452</version>
+			<version>4.21.0.v202509061548</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -618,7 +618,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.report.item.crosstab.core</artifactId>
-			<version>4.20.0.v202503121355</version>
+			<version>4.21.0.v202506161037</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -629,7 +629,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.report.model.adapter.oda</artifactId>
-			<version>4.20.0.v202503121355</version>
+			<version>4.21.0.v202506161037</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
@@ -640,7 +640,7 @@
 		<dependency>
 			<groupId>org.eclipse.birt</groupId>
 			<artifactId>org.eclipse.birt.report.model</artifactId>
-			<version>4.20.0.v202503291908</version>
+			<version>4.21.0.v202508071536</version>
 			<exclusions>
 				<exclusion>
 					<groupId>*</groupId>
