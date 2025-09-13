@@ -12,6 +12,7 @@
 	<artifactId>birt-runtime</artifactId>
 	<packaging>pom</packaging>
 
+	<name>birt-runtime</name>
 	<url>https://github.com/eureka-bpo/maven-birt-artifacts/tree/master/birt-runtime</url>
 
 	<properties>
